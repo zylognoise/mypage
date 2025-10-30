@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Cinematográfico</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header id="inicio" class="header">
+    <div class="hero-content">
+      <div class="logo-container">
+        <img src="/img/fotos/logo1.png" alt="logo" class="logo" />
+      </div>
+      <h1>Mi Nombre</h1>
+      <p class="bio">
+        Desarrollador web y creador de contenido digital.<br>
+        Me especializo en fotografía, video y videojuegos, combinando estética
+        y tecnología para crear experiencias inmersivas.
+      </p>
+    </div>
+  </header>
+
+  <main id="proyectos" class="grid">
+    <div class="card" onclick="openModal('proyecto1')">
+      <img src="/img/fotos/portada1.jpg" alt="Proyecto Fotos" />
+      <div class="card-content">
+        <h3>Imagenes-Ilustraciones</h3>
+        <p>Fotografía</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('proyecto2')">
+      <img src="/img/fotos/portada2.jpg" alt="Proyecto Video" />
+      <div class="card-content">
+        <h3>Video-Animaciones</h3>
+        <p>Video</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('proyecto3')">
+      <img src="/img/fotos/portada3.jpg" alt="Proyecto Videojuegos" />
+      <div class="card-content">
+        <h3>VideoJuegos</h3>
+        <p>Videojuegos</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal-proyecto1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('proyecto1')">&times;</span>
+      <h2>Proyecto 1 - Fotografías</h2>
+      <div class="gallery-grid">
+        <img src="/img/fotos/01.jpg" alt="Foto 1" /> 
+        <img src="/img/fotos/02.jpg" alt="Foto 2" />
+        <img src="/img/fotos/03.jpg" alt="Foto 3" />
+        <img src="/img/fotos/04.jpg" alt="Foto 4" />
+        <img src="/img/fotos/05.jpg" alt="Foto 5" />
+        <img src="/img/fotos/06.jpg" alt="Foto 6" />
+        <img src="/img/fotos/07.jpg" alt="Foto 7" />
+        <img src="/img/fotos/08.jpg" alt="Foto 8" />
+        <img src="/img/fotos/09.jpg" alt="Foto 9" />
+        <img src="/img/fotos/10.jpg" alt="Foto 10" />
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-proyecto2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('proyecto2')">&times;</span>
+      <h2>Proyecto 2 - Videos</h2>
+      <div class="gallery-grid">
+        <video controls src="img/proyecto2/video1.mp4"></video>
+        <video controls src="img/proyecto2/video2.mp4"></video>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-proyecto3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('proyecto3')">&times;</span>
+      <h2>Proyecto 3 - Videojuegos</h2>
+      <div class="gallery-grid">
+        <img src="img/proyecto3/img1.jpg" alt="Juego 1" />
+        <img src="img/proyecto3/img2.jpg" alt="Juego 2" />
+      </div>
+    </div>
+  </div>
+
+  <section id="sobre-mi" class="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un apasionado por el arte visual y la tecnología. Me gusta fusionar el
+      lenguaje cinematográfico con la programación para crear proyectos únicos.
+      Busco siempre nuevas formas de narrar y emocionar a través del diseño
+      interactivo.
+    </p>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <p>Podés encontrarme en:</p>
+    <ul>
+      <li><a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a></li>
+      <li><a href="https://www.instagram.com/tuperfil" target="_blank">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/tuperfil" target="_blank">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mi Nombre. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
